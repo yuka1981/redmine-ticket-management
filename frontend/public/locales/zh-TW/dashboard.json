@@ -1,0 +1,16 @@
+{
+  "title": "儀表板",
+  "assigned_to_me": "指派給我",
+  "created_by_me": "我建立的",
+  "overdue": "已逾期",
+  "updated_today": "今日更新",
+  "status_distribution": "依狀態",
+  "priority_distribution": "依優先權",
+  "tracker_distribution": "依追蹤標籤",
+  "overdue_issues": "逾期票務",
+  "recent_activity": "近期活動",
+  "no_overdue": "沒有逾期的票務",
+  "no_activity": "沒有近期活動",
+  "no_data": "無資料",
+  "load_error": "載入儀表板資料失敗，請重試。"
+}

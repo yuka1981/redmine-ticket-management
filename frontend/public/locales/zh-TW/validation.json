@@ -1,0 +1,16 @@
+{
+  "required": "{{field}} 為必填",
+  "min_length": "{{field}} 至少需要 {{min}} 個字元",
+  "max_length": "{{field}} 最多 {{max}} 個字元",
+  "invalid_url": "請輸入有效的網址",
+  "invalid_email": "請輸入有效的電子郵件",
+  "positive_number": "{{field}} 必須為正數",
+  "integer": "{{field}} 必須為整數",
+  "date_after": "{{field}} 必須在 {{date}} 之後",
+  "api_key_required": "API 金鑰為必填",
+  "url_required": "Redmine 網址為必填",
+  "subject_required": "主題為必填",
+  "project_required": "專案為必填",
+  "tracker_required": "追蹤標籤為必填",
+  "priority_required": "優先權為必填"
+}

@@ -1,0 +1,72 @@
+{
+  "title": "Tickets",
+  "new_ticket": "New Ticket",
+  "edit_ticket": "Edit Ticket",
+  "ticket_detail": "Ticket Detail",
+  "scope": {
+    "assigned_to_me": "Assigned to Me",
+    "created_by_me": "Created by Me",
+    "watched": "Watched"
+  },
+  "filters": {
+    "all_projects": "All Projects",
+    "all_trackers": "All Trackers",
+    "all_priorities": "All Priorities",
+    "status": "Status",
+    "status_open": "Open",
+    "status_closed": "Closed",
+    "status_all": "All"
+  },
+  "table": {
+    "id": "#",
+    "tracker": "Tracker",
+    "subject": "Subject",
+    "status": "Status",
+    "priority": "Priority",
+    "assigned_to": "Assigned To",
+    "updated": "Updated"
+  },
+  "form": {
+    "select_project": "Select project",
+    "select_tracker": "Select tracker",
+    "select_status": "Select status",
+    "select_priority": "Select priority",
+    "subject_placeholder": "Ticket subject",
+    "description_placeholder": "Describe the issue..."
+  },
+  "fields": {
+    "subject": "Subject",
+    "description": "Description",
+    "project": "Project",
+    "tracker": "Tracker",
+    "status": "Status",
+    "priority": "Priority",
+    "assigned_to": "Assigned To",
+    "author": "Author",
+    "start_date": "Start Date",
+    "due_date": "Due Date",
+    "done_ratio": "% Done",
+    "estimated_hours": "Estimated Hours",
+    "spent_hours": "Spent Hours",
+    "category": "Category",
+    "version": "Target Version",
+    "parent_issue": "Parent Issue",
+    "created_on": "Created",
+    "updated_on": "Updated"
+  },
+  "journals": {
+    "title": "History",
+    "add_note": "Add Note",
+    "note_placeholder": "Add a comment...",
+    "changed": "changed",
+    "from": "from",
+    "to": "to",
+    "set_to": "set to",
+    "deleted": "deleted"
+  },
+  "no_tickets": "No tickets found",
+  "delete_confirm": "Are you sure you want to delete this ticket?",
+  "created_success": "Ticket created successfully",
+  "updated_success": "Ticket updated successfully",
+  "deleted_success": "Ticket deleted successfully"
+}
