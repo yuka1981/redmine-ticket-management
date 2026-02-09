@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { api } from '@/lib/api';
 import { queryKeys } from '@/lib/queryKeys';
-import type { DashboardResponse, DashboardStats } from '@/types/redmine';
+import type { DashboardResponse } from '@/types/redmine';
 
 export function useDashboard() {
   return useQuery({

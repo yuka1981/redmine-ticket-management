@@ -76,6 +76,7 @@ export function TicketForm({ initialData, onSubmit, isSubmitting, onCancel }: Ti
       : {},
   });
 
+  // eslint-disable-next-line react-hooks/incompatible-library
   const projectId = watch('project_id');
   const trackerId = watch('tracker_id');
   const statusId = watch('status_id');

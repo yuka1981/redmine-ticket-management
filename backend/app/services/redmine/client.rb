@@ -1,3 +1,5 @@
+require "faraday/net_http_persistent"
+
 module Redmine
   class Client
     DEFAULT_TIMEOUT = 15
@@ -41,7 +43,7 @@ module Redmine
     def connection
       @connection ||= Faraday.new(url: base_url) do |f|
         f.request :retry, max: 2, interval: 0.5, backoff_factor: 2,
-                  exceptions: [Faraday::TimeoutError, Faraday::ConnectionFailed]
+                  exceptions: [ Faraday::TimeoutError, Faraday::ConnectionFailed ]
         f.headers["Content-Type"] = "application/json"
         f.headers["X-Redmine-API-Key"] = api_key
         f.options.timeout = DEFAULT_TIMEOUT

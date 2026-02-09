@@ -33,6 +33,20 @@ import type { IssueScope } from '@/types/redmine';
 
 const PER_PAGE = 25;
 
+function SortHeader({ field, children, onToggle }: { field: string; children: React.ReactNode; onToggle: (field: string) => void }) {
+  return (
+    <TableHead
+      className="cursor-pointer select-none"
+      onClick={() => onToggle(field)}
+    >
+      <div className="flex items-center gap-1">
+        {children}
+        <ArrowUpDown className="h-3 w-3" />
+      </div>
+    </TableHead>
+  );
+}
+
 export default function TicketListPage() {
   const { t } = useTranslation('tickets');
   const navigate = useNavigate();
@@ -86,18 +100,6 @@ export default function TicketListPage() {
       updateParam('sort', `${field}:asc`);
     }
   };
-
-  const SortHeader = ({ field, children }: { field: string; children: React.ReactNode }) => (
-    <TableHead
-      className="cursor-pointer select-none"
-      onClick={() => toggleSort(field)}
-    >
-      <div className="flex items-center gap-1">
-        {children}
-        <ArrowUpDown className="h-3 w-3" />
-      </div>
-    </TableHead>
-  );
 
   return (
     <div className="space-y-4">
@@ -193,13 +195,13 @@ export default function TicketListPage() {
             <Table>
               <TableHeader>
                 <TableRow>
-                  <SortHeader field="id">{t('table.id')}</SortHeader>
+                  <SortHeader field="id" onToggle={toggleSort}>{t('table.id')}</SortHeader>
                   <TableHead>{t('table.tracker')}</TableHead>
-                  <SortHeader field="subject">{t('table.subject')}</SortHeader>
-                  <SortHeader field="status">{t('table.status')}</SortHeader>
-                  <SortHeader field="priority">{t('table.priority')}</SortHeader>
+                  <SortHeader field="subject" onToggle={toggleSort}>{t('table.subject')}</SortHeader>
+                  <SortHeader field="status" onToggle={toggleSort}>{t('table.status')}</SortHeader>
+                  <SortHeader field="priority" onToggle={toggleSort}>{t('table.priority')}</SortHeader>
                   <TableHead>{t('table.assigned_to')}</TableHead>
-                  <SortHeader field="updated_on">{t('table.updated')}</SortHeader>
+                  <SortHeader field="updated_on" onToggle={toggleSort}>{t('table.updated')}</SortHeader>
                 </TableRow>
               </TableHeader>
               <TableBody>

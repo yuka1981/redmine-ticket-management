@@ -62,7 +62,7 @@ module Redmine
       body = JSON.parse(response.body)
       body["errors"] || []
     rescue JSON::ParserError
-      [response.body]
+      [ response.body ]
     end
   end
 end

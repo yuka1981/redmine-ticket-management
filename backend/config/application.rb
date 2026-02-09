@@ -47,9 +47,9 @@ module Backend
 
     # Use memory store for caching (swap to Redis in production if needed)
     config.cache_store = if ENV["REDIS_URL"].present?
-      [:redis_cache_store, { url: ENV["REDIS_URL"] }]
+      [ :redis_cache_store, { url: ENV["REDIS_URL"] } ]
     else
-      [:memory_store, { size: 32 * 1024 * 1024 }]
+      [ :memory_store, { size: 32 * 1024 * 1024 } ]
     end
   end
 end
