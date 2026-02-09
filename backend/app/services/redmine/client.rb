@@ -41,7 +41,7 @@ module Redmine
     private
 
     def connection
-      @connection ||= Faraday.new(url: base_url) do |f|
+      @connection ||= Faraday.new(url: base_url, ssl: ssl_options) do |f|
         f.request :retry, max: 2, interval: 0.5, backoff_factor: 2,
                   exceptions: [ Faraday::TimeoutError, Faraday::ConnectionFailed ]
         f.headers["Content-Type"] = "application/json"
@@ -50,6 +50,10 @@ module Redmine
         f.options.open_timeout = DEFAULT_OPEN_TIMEOUT
         f.adapter :net_http_persistent
       end
+    end
+
+    def ssl_options
+      { verify: ENV["REDMINE_SSL_VERIFY"] != "false" }
     end
 
     def handle(response)

@@ -121,14 +121,14 @@ export default function TicketListPage() {
 
       <div className="flex gap-2 flex-wrap">
         <Select
-          value={projectId ?? ''}
-          onValueChange={(val) => updateParam('project_id', val || undefined)}
+          value={projectId ?? '__all__'}
+          onValueChange={(val) => updateParam('project_id', val === '__all__' ? undefined : val)}
         >
           <SelectTrigger className="w-[180px]">
             <SelectValue placeholder={t('filters.all_projects')} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="">{t('filters.all_projects')}</SelectItem>
+            <SelectItem value="__all__">{t('filters.all_projects')}</SelectItem>
             {projects?.map((p) => (
               <SelectItem key={p.id} value={String(p.id)}>{p.name}</SelectItem>
             ))}
@@ -153,14 +153,14 @@ export default function TicketListPage() {
         </Select>
 
         <Select
-          value={trackerId ?? ''}
-          onValueChange={(val) => updateParam('tracker_id', val || undefined)}
+          value={trackerId ?? '__all__'}
+          onValueChange={(val) => updateParam('tracker_id', val === '__all__' ? undefined : val)}
         >
           <SelectTrigger className="w-[160px]">
             <SelectValue placeholder={t('filters.all_trackers')} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="">{t('filters.all_trackers')}</SelectItem>
+            <SelectItem value="__all__">{t('filters.all_trackers')}</SelectItem>
             {trackers?.map((tr) => (
               <SelectItem key={tr.id} value={String(tr.id)}>{tr.name}</SelectItem>
             ))}
@@ -168,14 +168,14 @@ export default function TicketListPage() {
         </Select>
 
         <Select
-          value={priorityId ?? ''}
-          onValueChange={(val) => updateParam('priority_id', val || undefined)}
+          value={priorityId ?? '__all__'}
+          onValueChange={(val) => updateParam('priority_id', val === '__all__' ? undefined : val)}
         >
           <SelectTrigger className="w-[160px]">
             <SelectValue placeholder={t('filters.all_priorities')} />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="">{t('filters.all_priorities')}</SelectItem>
+            <SelectItem value="__all__">{t('filters.all_priorities')}</SelectItem>
             {priorities?.map((p) => (
               <SelectItem key={p.id} value={String(p.id)}>{p.name}</SelectItem>
             ))}
