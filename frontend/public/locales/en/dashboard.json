@@ -1,0 +1,16 @@
+{
+  "title": "Dashboard",
+  "assigned_to_me": "Assigned to Me",
+  "created_by_me": "Created by Me",
+  "overdue": "Overdue",
+  "updated_today": "Updated Today",
+  "status_distribution": "By Status",
+  "priority_distribution": "By Priority",
+  "tracker_distribution": "By Tracker",
+  "overdue_issues": "Overdue Issues",
+  "recent_activity": "Recent Activity",
+  "no_overdue": "No overdue issues",
+  "no_activity": "No recent activity",
+  "no_data": "No data",
+  "load_error": "Failed to load dashboard data. Please try again."
+}

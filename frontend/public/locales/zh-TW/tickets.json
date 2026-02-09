@@ -1,0 +1,72 @@
+{
+  "title": "票務",
+  "new_ticket": "新增票務",
+  "edit_ticket": "編輯票務",
+  "ticket_detail": "票務詳情",
+  "scope": {
+    "assigned_to_me": "指派給我",
+    "created_by_me": "我建立的",
+    "watched": "我關注的"
+  },
+  "filters": {
+    "all_projects": "所有專案",
+    "all_trackers": "所有追蹤標籤",
+    "all_priorities": "所有優先權",
+    "status": "狀態",
+    "status_open": "開啟",
+    "status_closed": "已關閉",
+    "status_all": "全部"
+  },
+  "table": {
+    "id": "#",
+    "tracker": "追蹤標籤",
+    "subject": "主題",
+    "status": "狀態",
+    "priority": "優先權",
+    "assigned_to": "指派給",
+    "updated": "更新時間"
+  },
+  "form": {
+    "select_project": "選擇專案",
+    "select_tracker": "選擇追蹤標籤",
+    "select_status": "選擇狀態",
+    "select_priority": "選擇優先權",
+    "subject_placeholder": "票務主題",
+    "description_placeholder": "描述問題..."
+  },
+  "fields": {
+    "subject": "主題",
+    "description": "描述",
+    "project": "專案",
+    "tracker": "追蹤標籤",
+    "status": "狀態",
+    "priority": "優先權",
+    "assigned_to": "指派給",
+    "author": "作者",
+    "start_date": "開始日期",
+    "due_date": "到期日",
+    "done_ratio": "完成百分比",
+    "estimated_hours": "預估工時",
+    "spent_hours": "已花工時",
+    "category": "分類",
+    "version": "目標版本",
+    "parent_issue": "父票務",
+    "created_on": "建立時間",
+    "updated_on": "更新時間"
+  },
+  "journals": {
+    "title": "歷史紀錄",
+    "add_note": "新增備註",
+    "note_placeholder": "新增評論...",
+    "changed": "變更了",
+    "from": "從",
+    "to": "至",
+    "set_to": "設為",
+    "deleted": "已刪除"
+  },
+  "no_tickets": "找不到票務",
+  "delete_confirm": "確定要刪除此票務嗎？",
+  "created_success": "票務建立成功",
+  "updated_success": "票務更新成功",
+  "deleted_success": "票務刪除成功"
+}

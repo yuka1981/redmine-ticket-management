@@ -1,0 +1,23 @@
+{
+  "title": "Settings",
+  "connection": {
+    "title": "Connection",
+    "redmine_url": "Redmine URL",
+    "api_key": "API Key",
+    "connected_as": "Connected as",
+    "status": "Status",
+    "connected": "Connected",
+    "disconnected": "Disconnected"
+  },
+  "language": {
+    "title": "Language",
+    "select": "Select Language",
+    "en": "English",
+    "zh-TW": "Traditional Chinese"
+  },
+  "account": {
+    "title": "Account",
+    "logout": "Logout",
+    "logout_confirm": "Are you sure you want to logout?"
+  }
+}
